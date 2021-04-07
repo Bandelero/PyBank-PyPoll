@@ -39,7 +39,30 @@ for i in range(len(profit_losses)-1):
 	#monthly_change = 0
 	profit_loss_avg_change = next_row - previous_row
 	monthly_changes.append(profit_loss_avg_change)
+<<<<<<< HEAD
 
+=======
+'''
+	if(previous_row < next_row ) & (previous_row > 0) & (next_row > 0 ):
+		monthly_change = next_row - previous_row
+		monthly_changes.append(monthly_change)
+	elif(previous_row > next_row ) & (previous_row > 0) & (next_row > 0 ):
+		monthly_change = next_row - previous_row
+		monthly_changes.append(monthly_change)	
+	elif(previous_row > next_row ) & (previous_row > 0) & (next_row < 0 ):
+		monthly_change = next_row - previous_row
+		monthly_changes.append(monthly_change)
+	elif(previous_row < next_row ) & (previous_row < 0) & (next_row > 0 ):
+		monthly_change = next_row - previous_row
+		monthly_changes.append(monthly_change)
+	elif(previous_row < next_row ) & (previous_row < 0) & (next_row < 0 ):
+		monthly_change = next_row - previous_row
+		monthly_changes.append(monthly_change)  
+	elif(previous_row > next_row ) & (previous_row < 0) & (next_row < 0 ):
+		monthly_change = next_row - previous_row
+		monthly_changes.append(monthly_change)
+'''
+>>>>>>> 3affa775ce7252068164a94d30f053d30b55b14f
 #This function finds the average of the values in the monthly_changes list and rouncs by 2 decimals
 def Average(monthly_changes):
 	return sum(monthly_changes) / len(monthly_changes)
@@ -64,6 +87,10 @@ for (month_value, avg_value) in zip(date, range(len(monthly_changes)+1)):
 		print(f'Greatest Decrease in Profits: {month_value} ({min_value})')
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3affa775ce7252068164a94d30f053d30b55b14f
 #write to text file
 output_path = os.path.join("textOutput.txt")
 
@@ -83,6 +110,17 @@ with open(output_path, 'w', newline='') as csvfile:
 	for (month_value, avg_value) in zip(date, range(len(monthly_changes)+1)):
 		new_avg_value = monthly_changes[avg_value-1]
 		if(max_value == new_avg_value):
+<<<<<<< HEAD
 			csvwriter.writerow(['Greatest Increase in Profits: {} ({})'.format(month_value,max_value)])
 		if(min_value == new_avg_value):
 			csvwriter.writerow(['Greatest Decrease in Profits: {} ({})'.format(month_value,min_value)])
+=======
+			csvwriter.writerow(['Greatest Increase in Profits: %s' % (month_value), (max_value)])
+		if(min_value == new_avg_value):
+			csvwriter.writerow(['Greatest Decrease in Profits: %s' % (month_value), (min_value)])
+
+
+
+
+
+>>>>>>> 3affa775ce7252068164a94d30f053d30b55b14f
