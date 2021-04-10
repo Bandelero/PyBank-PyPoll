@@ -37,7 +37,7 @@ with open(election_data, 'r') as csvfile:
 
 
 #write to text file
-output_path = os.path.join("textOutputPypoll.txt")
+output_path = os.path.join("analysis/textOutputPypoll.txt")
 with open(output_path, 'w', newline='') as csvfile:
 	csvwriter = csv.writer(csvfile, delimiter=',')
 
