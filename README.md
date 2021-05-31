@@ -1,6 +1,6 @@
 # PyBank 
 
-In this challenge, you are tasked with creating a Python script for analyzing the financial records of your company.
+In this challenge, I was tasked with creating a Python script for analyzing the financial records of your company.
 
 # Summary 
 
@@ -22,7 +22,7 @@ Greatest Decrease in Profits: Sep-2013 (-2196167)
 
 # PyPoll
 
-In this challenge, you are tasked with helping a small, rural town modernize its vote counting process.
+In this challenge, I was tasked with helping a small, rural town modernize its vote counting process.
 
 # Summary
 
