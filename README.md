@@ -34,9 +34,10 @@ Like the part above, I read in a csv file using csv.reader. I then created a cou
 
 # My Output
 
+
 Election Results
 ------------------------------
-Total Votes: 3521001
+Total Votes: 3521001 
 ------------------------------
 Khan: 63.000% (2218231)
 Correy: 20.000% (704200)
